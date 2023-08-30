@@ -2,12 +2,10 @@
 
 
 function getBMWAndAudi(inventory){
-    const BMWAndAudi = inventory.filter((ele) => {
-        if(ele.car_make == "Audi" || ele.car_make == "BMW" ){
-            return ele
-        }
+    const bmwAndAudi = inventory.filter((ele) => {
+        return ele.car_make == "Audi" || ele.car_make == "BMW" 
     })
-    return BMWAndAudi
+    return bmwAndAudi
 }
 
 module.exports = getBMWAndAudi

@@ -3,10 +3,7 @@
 
 function getOldCars(cars) {
     const oldCarCount = cars.filter((ele) => {
-        if( ele < 2000){
-            console.log(ele)
-            return ele
-        }
+        return ele < 2000
     })
     return oldCarCount.length;
 }
