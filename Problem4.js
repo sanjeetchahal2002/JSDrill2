@@ -3,10 +3,9 @@
 
 
 function getYears(inventory){
-    const yearArr = []
-    for(let i=0;i<inventory.length;i++){
-        yearArr.push(inventory[i].car_year)
-    }
+    const yearArr = inventory.map((ele) => {
+        return ele.car_year
+    })
     return yearArr
 }
 
